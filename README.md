@@ -10,7 +10,10 @@ Initially user needs to select the converter type
 
 <p><img src="/images/Screenshot (11).png"></p>
 
-After selection of converter type the related
+After selection of converter type the related will appear on the sceen.
+
+<p><img src="/images/Screenshot (11).png"></p>
+
 ### For creating converters
 Developed each converter as a pipe by using Custom pipes concept. Used transform method for creating custom pipes.
 ### Eg: transform(value: any,from:any,to:any): any {  return this.tempConv(value,from,to);}
