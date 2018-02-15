@@ -1,6 +1,10 @@
-# Conversions
-Based on given selected units and input, it converts into user expected units. 
-### Converter in Angular4 
+# Converters
+Converters is a simple component developed by using Angular. This is used to convert physical quantities(temparature, speed, weight, length) from one unit to another unit. For Example incase of length we can convert from meter to kilometer,centimeter, millimeter and miles etc. 
+## Different types of physical quantities involved in this component
+#Temparature 
+#Speed
+#Weight
+#Length
 It is a units converters component. In this component Temparature Converter, Length Converter, Speed Converter, Weight Converters are there. 
 Users can convert from one unit to required unit based on selected unit.
 ### For creating converters
