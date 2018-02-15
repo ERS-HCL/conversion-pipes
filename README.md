@@ -5,8 +5,11 @@ Converters is a simple component developed by using Angular. This is used to con
 - Speed
 - Weight
 - Length
-It is a units converters component. In this component Temparature Converter, Length Converter, Speed Converter, Weight Converters are there. 
-Users can convert from one unit to required unit based on selected unit.
+## How it works 
+Initially user needs to select the converter type
+
+![Screenshot](screenshot.png)
+
 ### For creating converters
 Developed each converter as a pipe by using Custom pipes concept. Used transform method for creating custom pipes.
 ### Eg: transform(value: any,from:any,to:any): any {  return this.tempConv(value,from,to);}
