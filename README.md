@@ -1,10 +1,10 @@
 # Conversions
 Based on given selected units and input, it converts into user expected units. 
 ### Converter in Angular4 
-It is a units converters component. In this Temparature Converters, Length Converters, Speed Converters, Weight Converters are there. 
-They are used to converting from one unit to required unit based on selected unit.
+It is a units converters component. In this component Temparature Converter, Length Converter, Speed Converter, Weight Converters are there. 
+Users can convert from one unit to required unit based on selected unit.
 ### For creating converters
-Developed each converter as a pipe by using Costom pipes. Used transform method for creating custom pipes.
+Developed each converter as a pipe by using Custom pipes concept. Used transform method for creating custom pipes.
 ### Eg: transform(value: any,from:any,to:any): any {  return this.tempConv(value,from,to);}
   'tempConv' is a method which is having the entire logic belongs to the converter.
 ### Used custom pipes
