@@ -8,7 +8,7 @@ Converters is a simple component developed by using Angular. This is used to con
 ## How it works 
 Initially user needs to select the converter type
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot (11).png)
 
 ### For creating converters
 Developed each converter as a pipe by using Custom pipes concept. Used transform method for creating custom pipes.
