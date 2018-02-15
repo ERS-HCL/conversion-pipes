@@ -8,8 +8,9 @@ Converters is a simple component developed by using Angular. This is used to con
 ## How it works 
 Initially user needs to select the converter type
 
-![Screenshot](Screenshot (11).png)
+<p><img src="/images/Screenshot (11).png"></p>
 
+After selection of converter type the related
 ### For creating converters
 Developed each converter as a pipe by using Custom pipes concept. Used transform method for creating custom pipes.
 ### Eg: transform(value: any,from:any,to:any): any {  return this.tempConv(value,from,to);}
