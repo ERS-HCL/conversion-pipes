@@ -55,5 +55,5 @@ Inputs for the component is selecting two dropdowns and numerical input.
 And give the numeric value in the text box then only it will process and returns the value to the output box.
 ## Output
 Output of this component is user expected converted numerical value.
-## Test URL
-https://angular-uoz1z7-oebdrm.stackblitz.io
+
+**To preview the demo of this Component please click here**: [Click here](https://angular-uoz1z7-oebdrm.stackblitz.io)
