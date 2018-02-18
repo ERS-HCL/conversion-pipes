@@ -7,7 +7,7 @@ Converters is a simple component developed by using Angular. This is used to con
 - Length
 ## Using the complete angular project
 
-Download the src folder and install the required packages and run the application. All the required material components are imported to the project.
+Download the src folder and install the required packages and run the application. All the required components are imported to the project.
 
 ### Installing
 
@@ -26,7 +26,7 @@ Initially user needs to select the converter type
 
 <p><img src="/images/Screenshot (11).png"></p>
 
-After selection of converter type that div will appear on the sceen.
+After selection of converter type a div will display on the screen.
 
 <p><img src="/images/Screenshot (12).png"></p>
 Then user needs to select the type of units as shown below.
@@ -49,7 +49,7 @@ transform(value: any,from:any,to:any): any {
   'tempConv' is a method which is having the entire logic belongs to the converter.
 ### Used custom pipes
 Used custom pipes are time, length, speed, weight for converting the input value. The logic required for conversion have written in custom pipes user defined methods.
-## Intput
+## Input
 Inputs for the component is selecting two dropdowns and numerical input. 
 
 And give the numeric value in the text box then only it will process and returns the value to the output box.
