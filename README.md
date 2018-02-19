@@ -1,3 +1,6 @@
+**To preview the demo of this Component please [Click here](https://stackblitz.com/edit/angular-uoz1z7-jwyrrg?embed=1&file=src/app/converters/converters.component.html&hideNavigation=1&view=preview)**
+
+
 # Converters
 In this, pipes are used to convert from one unit to another unit. For each converter, I have created one pipe. The pipes are temp pipe, speed pipe, weight pipe and length pipe. This is used to convert the physical quantities like temparature, speed, weight, length  from one unit to another unit. For Example incase of length we can convert from meter to kilometer,centimeter, millimeter and miles etc. The conversion logic is written in pipes. For ex, temparature conversion(kelvin to celsius, celsius to fahrenhiet and etc) logic written in temp pipe.  
 ## Different types of conversions(pipes) involved in this component
@@ -56,4 +59,3 @@ And give the numeric value in the text box then only it will process and returns
 ## Output
 Output of this component is user expected converted numerical value.
 
-**To preview the demo of this Component please [Click here](https://stackblitz.com/edit/angular-uoz1z7-jwyrrg?embed=1&file=src/app/converters/converters.component.html&hideNavigation=1&view=preview)**
