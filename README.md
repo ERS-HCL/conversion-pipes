@@ -7,7 +7,7 @@ In this, pipes are used to convert from one unit to another unit. For each conve
 - Length
 ## Using the complete angular project
 
-Download the src folder and install the required packages and run the application. All the required components are imported to the project.
+Download the src folder and install the required packages and run the application.
 
 ### Installing
 
