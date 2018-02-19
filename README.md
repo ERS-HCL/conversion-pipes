@@ -56,4 +56,4 @@ And give the numeric value in the text box then only it will process and returns
 ## Output
 Output of this component is user expected converted numerical value.
 
-**To preview the demo of this Component please click here**: [Click here](https://angular-uoz1z7-oebdrm.stackblitz.io)
+**To preview the demo of this Component please [Click here](https://stackblitz.com/edit/angular-uoz1z7-jwyrrg?embed=1&file=src/app/converters/converters.component.html&hideNavigation=1&view=preview)**
