@@ -1,5 +1,5 @@
 # Converters
-Converters is a simple component developed by using Angular. This is used to convert physical quantities(temparature, speed, weight, length) from one unit to another unit. For Example incase of length we can convert from meter to kilometer,centimeter, millimeter and miles etc. 
+In this, pipes are used to convert from one unit to another unit. For each converter, I have created one pipe. The pipes are temp pipe, speed pipe, weight pipe and length pipe. This is used to convert the physical quantities like temparature, speed, weight, length  from one unit to another unit. For Example incase of length we can convert from meter to kilometer,centimeter, millimeter and miles etc. The conversion logic is written in pipes. For ex, temparature conversion(kelvin to celsius, celsius to fahrenhiet) logic written in temp pipe.  
 ## Different types of conversions involved in this component
 - Temparature 
 - Speed
@@ -26,7 +26,7 @@ Initially user needs to select the converter type
 
 <p><img src="/images/Screenshot (11).png"></p>
 
-After selection of converter type a div will display on the screen.
+After selection of converter type a div will display on the screen as mentioned below.
 
 <p><img src="/images/Screenshot (12).png"></p>
 Then user needs to select the type of units as shown below.
