@@ -1,6 +1,6 @@
 # Converters
 Converters is a simple component developed by using Angular. This is used to convert physical quantities(temparature, speed, weight, length) from one unit to another unit. For Example incase of length we can convert from meter to kilometer,centimeter, millimeter and miles etc. 
-## Different types of physical quantities involved in this component
+## Different types of conversions involved in this component
 - Temparature 
 - Speed
 - Weight
