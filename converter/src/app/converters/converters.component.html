@@ -1,86 +1,45 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-  <head>
-
-    <title>User Input</title>
-
-    <base href="/">
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  </head>
-
- 
-
-  <body>
-    <br><br><br>
-    <h1 style="text-align:center">
-
-    {{ title }}!
-
-  </h1>
-  <br><br>
+<br><br><br>
+<h1 style="text-align:center">
+  {{ title }}!
+</h1>
+<br><br>
 <table align="center" style="text-align:center">
-  
-
-<tr>
-     <td> Select type:</td>
-
-        <td><select class="selectConv" (change)="convChange($event)">
-
-          <option *ngFor="let con of convs" [value]="con">{{con}}</option> 
-
-        </select></td>
-      </tr>
+  <tr>
+    <td> Select type:</td>
+    <td>
+      <select class="selectConv" (change)="convChange($event)">
+      <option *ngFor="let con of convs" [value]="con">{{con}}</option> 
+      </select>
+    </td>
+  </tr>
 </table>
-      <!-- Temp Converter  -->
-       <div style="text-align:center" class="temp" [class.tConv]="tConv">
-         <br>
-       <table align="center">
-     
-      <tr>
-        
-        <td>
-  
-            From:<br>
-  
-          <select class="selectConv" (change)='tempChange(tempId.value,tempFrom.value,tempTo.value)' #tempFrom>
-  
-            <option *ngFor="let deg of degrees" [value]="deg" >{{deg}}</option>
-  
-          </select>
-  
-        </td>
-  
-        <td>
-  
-            To:<br>
-  
-          <select class="selectConv" (change)='tempChange(tempId.value,tempFrom.value,tempTo.value)' #tempTo>
-  
-            <option *ngFor="let deg of degrees" [value]="deg">{{deg}}</option>
-  
-          </select>
-  
-        </td>
-  
-      </tr><br>
-  
-      <tr>
-        <td>
-          <input type="text" name="fromVal" #tempId class="selectConv" [(ngModel)]="temp">
-        </td>
-  
-        <td>
-          <div class="output" [(ngModel)]="tempOut">{{temp|temp: tempFrom.value:tempTo.value}}</div>
-        </td>
-      </tr>
-       </table>
-      </div>
+<!-- Temp Converter  -->
+<div style="text-align:center" class="temp" [class.tConv]="tConv"><br>
+  <table align="center">
+    <tr>
+      <td>
+        From:<br>
+        <select class="selectConv" (change)='tempChange(tempId.value,tempFrom.value,tempTo.value)' #tempFrom>
+          <option *ngFor="let deg of degrees" [value]="deg" >{{deg}}</option>
+        </select>
+      </td>
+      <td>
+        To:<br>
+        <select class="selectConv" (change)='tempChange(tempId.value,tempFrom.value,tempTo.value)' #tempTo>
+          <option *ngFor="let deg of degrees" [value]="deg">{{deg}}</option>
+        </select>
+      </td>
+    </tr><br>
+    <tr>
+      <td>
+        <input type="text" name="fromVal" #tempId class="selectConv" [(ngModel)]="temp">
+      </td>
+      <td>
+        <div class="output" [(ngModel)]="tempOut">{{temp|temp: tempFrom.value:tempTo.value}}</div>
+      </td>
+    </tr>
+  </table>
+</div>
       
     <!-- Length Converter -->
 
@@ -122,9 +81,6 @@
       </tr><br>
   
       <tr>
-  
-      
-  
             <td><input type="text" name="fromVal" #lengthId class="selectConv" [(ngModel)]="length"></td>
   
             <td><div class="output">{{length|length: lenFrom.value:lenTo.value}}</div></td>
@@ -222,13 +178,7 @@
     
   </div>
 
-  </body>
-
-</html>
-
-
-
-
+  
 <!-- 
 Copyright 2017-2018 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
