@@ -12,9 +12,15 @@ span{
 h4{
   color:cadetblue;
 }
-@media only screen and (max-width:260px) {
+.outerDiv{
+  margin-left: 40%;
+}
+@media only screen and (max-width:300px) {
    /* For mobile phones:  */
  .input{
     width:50px;
   }
+  .outerDiv{
+  margin-left: 10%;
+}
 }
