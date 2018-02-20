@@ -99,7 +99,7 @@ export class TempPipe implements PipeTransform {
       return this.val;
     }
     else{
-      return "-";
+      return "";
     }
     
   }
