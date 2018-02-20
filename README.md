@@ -36,9 +36,9 @@ In this, pipes are used to convert from one unit to another unit. For each conve
   <tr><td>weight pipe</td><td>Kilogram</td><td>Gram<br>Milligram<br>Microgram<br>Stone<br>Pound<br>Ounce</td><td>'weight pipe' converts from Kilogram to all mentioned units and Gram to all other units and all other units to remaining units.</td>><td>Examples are:<br>Any digits or float values for all units like 1, 10, 0.5,...</td></tr>
 </table>
 
-## Output Format 
+## Output Format: 
 
-<img src="/images/Screenshot (13).png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/Screenshot (13).png">
 
 ### For creating pipes
 Custom pipes use transform method for pipes execution.
