@@ -38,7 +38,7 @@ In this, pipes are used to convert from one unit to another unit. For each conve
 
 ## Output Format 
 
-<p><img src="/images/Screenshot (11).png"></p>
+<img src="/images/Screenshot (13).png">
 
 ### For creating pipes
 Custom pipes use transform method for pipes execution.
