@@ -1,5 +1,3 @@
-**To preview the demo of this Component please [Click here](https://stackblitz.com/edit/angular-uoz1z7-ls8t7m?embed=1&file=src/app/converters/converters.component.html&hideNavigation=1&view=preview)**
-
 
 # Conversion-pipes
 
@@ -39,6 +37,9 @@ In this, pipes are used to convert from one unit to another unit. For each conve
 ## Output Format: 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/Screenshot (13).png">
+
+**To preview the demo of this Component please [Click here](https://stackblitz.com/edit/angular-uoz1z7-ls8t7m?embed=1&file=src/app/converters/converters.component.html&hideNavigation=1&view=preview)**
+
 
 ### For creating pipes
 Custom pipes use transform method for pipes execution.
