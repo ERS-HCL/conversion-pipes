@@ -3,7 +3,7 @@
 
 ## Using the complete angular project
 
-Download the src folder and install the required packages and run the application.
+Download the converter folder and install the required packages and run the application.
 
 ### Installing
 
