@@ -355,7 +355,7 @@ export class LengthPipe implements PipeTransform {
       return this.output;
     }
     else{
-      return "-";
+      return "";
     }
     
   }
