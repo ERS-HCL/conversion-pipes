@@ -117,7 +117,7 @@ export class SpeedPipe implements PipeTransform {
       return this.output;
     }
     else{
-      return "-";
+      return "";
     }
 
   }
