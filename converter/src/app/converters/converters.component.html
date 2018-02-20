@@ -1,186 +1,51 @@
-<br><br><br>
 <h1 style="text-align:center">
   {{ title }}!
-</h1>
-<br><br>
-<table align="center" style="text-align:center">
-  <tr>
-    <td> Select type:</td>
-    <td>
-      <select class="selectConv" (change)="convChange($event)">
-      <option *ngFor="let con of convs" [value]="con">{{con}}</option> 
-      </select>
-    </td>
-  </tr>
-</table>
-<!-- Temp Converter  -->
-<div style="text-align:center" class="temp" [class.tConv]="tConv"><br>
-  <table align="center">
-    <tr>
-      <td>
-        From:<br>
-        <select class="selectConv" (change)='tempChange(tempId.value,tempFrom.value,tempTo.value)' #tempFrom>
-          <option *ngFor="let deg of degrees" [value]="deg" >{{deg}}</option>
-        </select>
-      </td>
-      <td>
-        To:<br>
-        <select class="selectConv" (change)='tempChange(tempId.value,tempFrom.value,tempTo.value)' #tempTo>
-          <option *ngFor="let deg of degrees" [value]="deg">{{deg}}</option>
-        </select>
-      </td>
-    </tr><br>
-    <tr>
-      <td>
-        <input type="text" name="fromVal" #tempId class="selectConv" [(ngModel)]="temp">
-      </td>
-      <td>
-        <div class="output" [(ngModel)]="tempOut">{{temp|temp: tempFrom.value:tempTo.value}}</div>
-      </td>
-    </tr>
-  </table>
+</h1><br>
+<h4>Length Conversion:</h4>
+<div>
+  <div><input type="number" [(ngModel)]="meter" class="input">m to <span>{{meter|length: "Meter":"Centimeter"}}</span> cm</div><br>
+
+  <div><input type="number" [(ngModel)]="Kilometer" class="input">Km to <span>{{Kilometer|length: "Kilometer":"Mile"}}</span> Miles</div><br>
+
+  <div><input type="number" [(ngModel)]="Foot" class="input">Foots to <span>{{Foot|length: "Foot":"Inch"}}</span> Inches</div><br>
+
+  <div><input type="number" [(ngModel)]="Yard" class="input">Yard to <span>{{Yard|length: "Yard":"Foot"}}</span> Foots</div><br>
+  
 </div>
-      
-    <!-- Length Converter -->
 
-    
-  <div style="text-align:center" class="length" [class.lConv]="lConv">
-    <table align="center">
-      <tr>
-  
-        <h2></h2>
-  
-      </tr>
-  
-      <tr>
-  
-        <td>
-  
-            From:<br>
-  
-          <select class="selectConv" (change)='lengthChange(lengthId.value,lenFrom.value,lenTo.value)' #lenFrom>
-  
-            <option *ngFor="let len of lengths" [value]="len" >{{len}}</option>
-  
-          </select>
-  
-        </td>
-  
-        <td>
-  
-            To:<br>
-  
-          <select class="selectConv" (change)='lengthChange(lengthId.value,lenFrom.value,lenTo.value)' #lenTo>
-  
-            <option *ngFor="let len of lengths" [value]="len" >{{len}}</option>
-  
-          </select>
-  
-        </td>
-  
-      </tr><br>
-  
-      <tr>
-            <td><input type="text" name="fromVal" #lengthId class="selectConv" [(ngModel)]="length"></td>
-  
-            <td><div class="output">{{length|length: lenFrom.value:lenTo.value}}</div></td>
-      </tr>
-      </table>
-  </div>
-    
-  
- <br>
+<h4>Speed Conversion:</h4>
+<div>
+  <div><input type="number" [(ngModel)]="Kmph" class="input">Km/hr to <span>{{Kmph|speed: "Km/hr":"m/s"}}</span> m/s</div><br>
 
-<!-- weight Converter -->
-  <div style="text-align:center"  class="weight" [class.wConv]="wConv">
+  <div><input type="number" [(ngModel)]="mileph" class="input">Mile/hr to <span>{{mileph|speed: "mile/hr":"Km/hr"}}</span> Km/hr</div><br>
 
-    <table align="center">
-  
-      <tr>
-  
-        <td>
-  
-            From:<br>
-  
-          <select class="selectConv" (change)='weightChange(weightId.value,weightFrom.value,weightTo.value)' #weightFrom>
-  
-            <option *ngFor="let we of weights" [value]="we" >{{we}}</option>
-  
-          </select>
-  
-        </td>
-  
-        <td>
-  
-            To:<br>
-  
-          <select class="selectConv" (change)='weightChange(weightId.value,weightFrom.value,weightTo.value)' #weightTo>
-  
-            <option *ngFor="let we of weights" [value]="we" >{{we}}</option>
-  
-          </select>
-  
-        </td>
-  
-      </tr><br>
-  
-      <tr>
-            <td><input type="text" name="fromVal" #weightId class="selectConv" [(ngModel)]="weight"></td>
-  
-            <td><div class="output">{{weight|weight: weightFrom.value:weightTo.value}}</div></td>
-      </tr>
-  
-    </table>
-  
-  </div>
-  
+  <div><input type="number" [(ngModel)]="mps" class="input">m/s to <span>{{mps|speed: "m/s":"m/hr"}}</span> m/hr</div><br>
 
-    <!-- Speed Converter -->
-    <div style="text-align:center" class="speed" [class.sConv]="sConv">
+  <div><input type="number" [(ngModel)]="Kmps" class="input">Km/s to <span>{{Kmps|speed: "Km/s":"mile/hr"}}</span> Mile/hr</div><br>
+  
+</div>
 
-    <table align="center">
-  
-      <tr>
-  
-        <td>
-  
-            From:<br>
-  
-          <select class="selectConv" (change)='speedChange(speedId.value,speedFrom.value,speedTo.value)' #speedFrom>
-  
-            <option *ngFor="let speed of speeds" [value]="speed" >{{speed}}</option>
-  
-          </select>
-  
-        </td>
-  
-        <td>
-  
-            To:<br>
-  
-          <select class="selectConv" (change)='speedChange(speedId.value,speedFrom.value,speedTo.value)' #speedTo>
-  
-            <option *ngFor="let speed of speeds" [value]="speed" >{{speed}}</option>
-  
-          </select>
-  
-        </td>
-  
-      </tr><br>
-  
-      <tr>
-        <td><input type="text" name="fromVal" #speedId class="selectConv" [(ngModel)]="speed"></td>
-        <td><div class="output">{{speed|speed: speedFrom.value:speedTo.value}}</div></td>
-      </tr>
-      <br>
-      
-    </table>
-    
-  </div>
+<h4>Temparature Conversion:</h4>
+<div>
+  <div><input type="number" [(ngModel)]="Kelvin" class="input">Kelvin to <span>{{Kelvin|temp: "Kelvin":"Celsius"}}</span> Celsius</div><br>
 
+  <div><input type="number" [(ngModel)]="Celsius" class="input">Celsius to <span>{{Celsius|temp: "Celsius":"Fahrenheit"}}</span> Fahrenheit</div><br>
+
+  <div><input type="number" [(ngModel)]="Fahrenheit" class="input">Fahrenheit to <span>{{Fahrenheit|temp: "Fahrenheit":"Kelvin"}}</span> Kelvin</div><br>
+
+  <div><input type="number" [(ngModel)]="Kelvin" class="input">Kelvin to <span>{{Kelvin|temp: "Kelvin":"Fahrenheit"}}</span> Fahrenheit</div><br>
   
-<!-- 
-Copyright 2017-2018 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->
+</div>
+
+
+<h4>Weight Conversion:</h4>
+<div>
+  <div><input type="number" [(ngModel)]="Kilogram" class="input">Kilogram to <span>{{Kilogram|weight: "Kilogram":"Gram"}}</span> Gram</div><br>
+
+  <div><input type="number" [(ngModel)]="Gram" class="input">Gram to <span>{{Gram|weight: "Gram":"Stone"}}</span> Stone</div><br>
+
+  <div><input type="number" [(ngModel)]="Pound" class="input">Pound to <span>{{Pound|weight: "Pound":"Ounce"}}</span> Ounce</div><br>
+
+  <div><input type="number" [(ngModel)]="Milligram" class="input">Milligram to <span>{{Milligram|weight: "Milligram":"Microgram"}}</span> Microgram</div><br>
+  
+</div>
