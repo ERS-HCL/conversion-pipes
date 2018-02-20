@@ -192,7 +192,7 @@ export class WeightPipe implements PipeTransform {
       return this.output;
     }
     else{
-      return "-";
+      return "";
     }
   }
 
